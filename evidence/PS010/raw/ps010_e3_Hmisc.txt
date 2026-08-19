@@ -1,0 +1,3 @@
+* installing to library ‘/usr/local/lib/R/site-library’
+ERROR: dependencies ‘Formula’, ‘ggplot2’, ‘latticeExtra’, ‘acepack’, ‘gtable’, ‘gridExtra’, ‘data.table’, ‘htmlTable’, ‘viridis’, ‘htmltools’, ‘base64enc’ are not available for package ‘Hmisc’
+* removing ‘/usr/local/lib/R/site-library/Hmisc’

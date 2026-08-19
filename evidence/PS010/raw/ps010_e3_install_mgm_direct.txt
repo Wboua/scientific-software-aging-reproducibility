@@ -1,0 +1,3 @@
+* installing to library ‘/usr/local/lib/R/site-library’
+ERROR: dependencies ‘stringr’, ‘Hmisc’, ‘qgraph’ are not available for package ‘mgm’
+* removing ‘/usr/local/lib/R/site-library/mgm’

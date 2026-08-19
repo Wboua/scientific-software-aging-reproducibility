@@ -1,0 +1,6 @@
+Mean Runtime Report (sec.)  ,  ,  ,  ,  , 
+Variant               , Base_Seq , Base_Seq , Base_Seq , RAJA_Seq , RAJA_Seq
+Tuning                , default  , kahan    , cascade  , default  , new     
+Basic_DAXPY           , 0.675188 ,  Not run ,  Not run , 0.675566 ,  Not run
+Stream_TRIAD          , 1.662521 ,  Not run ,  Not run , 1.792383 ,  Not run
+Algorithm_REDUCE_SUM  , 0.100516 , 0.363619 , 0.111107 , 0.161513 , 0.101709

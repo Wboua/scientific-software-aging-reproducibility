@@ -1,0 +1,43 @@
+diff --git a/experiments/freqshape/bc_model_ptype.py b/experiments/freqshape/bc_model_ptype.py
+index ae68b98..c7b93a0 100644
+--- a/experiments/freqshape/bc_model_ptype.py
++++ b/experiments/freqshape/bc_model_ptype.py
+@@ -8,7 +8,7 @@ from txai.utils.predictors.loss_smoother_stats import *
+ from txai.models.encoders.transformer_simple import TransformerMVTS
+ from txai.utils.data import process_Synth
+ from txai.utils.predictors.eval import eval_mv4
+-from txai.synth_data.simple_spike import SpikeTrainDataset
++# from txai.synth_data.simple_spike import SpikeTrainDataset
+ from txai.utils.data.datasets import DatasetwInds
+ from txai.utils.predictors.loss_cl import *
+ from txai.utils.predictors.select_models import *
+@@ -157,13 +157,18 @@ def main(args):
+             masktoken_stats = (mu, std),
+         )
+ 
+-        model.encoder_main.load_state_dict(torch.load(tencoder_path.format(i)))
++        model.encoder_main.load_state_dict(
++            torch.load(tencoder_path.format(i), map_location=device)
++        )
++
+         model.to(device)
+         if is_timex:
+             model.init_prototypes(train = (D['train_loader'].X.to(device), D['train_loader'].times.to(device), D['train_loader'].y.to(device)))
+ 
+             if not args.ge_rand_init: # Copies if not running this ablation
+-                model.encoder_t.load_state_dict(torch.load(tencoder_path.format(i)))
++                model.encoder_t.load_state_dict(
++                    torch.load(tencoder_path.format(i), map_location=device)
++                )
+ 
+         for param in model.encoder_main.parameters():
+             param.requires_grad = False
+@@ -199,7 +204,7 @@ def main(args):
+         #     **sc_expand_args
+         # )
+ 
+-        sdict, config = torch.load(spath)
++        sdict, config = torch.load(spath, map_location=device)
+ 
+         model.load_state_dict(sdict)
+         f1, _, results_dict = eval_mv4(test, model, gt_exps=gt_exps)

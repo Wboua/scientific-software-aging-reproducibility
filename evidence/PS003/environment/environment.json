@@ -1,0 +1,14 @@
+﻿[
+    {
+        "jdk":  "17",
+        "java":  "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.8-hotspot\\bin\\java.exe"
+    },
+    {
+        "jdk":  "21",
+        "java":  "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.12.8-hotspot\\bin\\java.exe"
+    },
+    {
+        "jdk":  "25",
+        "java":  "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.4.7-hotspot\\bin\\java.exe"
+    }
+]

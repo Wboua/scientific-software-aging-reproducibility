@@ -1,0 +1,10 @@
+Recovery inspection date: 2026-08-15
+Source directory: C:\Users\Destock\Downloads\PS009-NPB-CPP
+Git HEAD: d31c997580ef1a58c13c69fe02dadcb3e0e95105
+Git commit date: 2021-07-29 15:50:13 -0300
+Git commit subject: Update README.md
+Untracked relevant files: NPB-SER/CG/npbparams.hpp; NPB-SER/EP/npbparams.hpp; NPB-SER/sys/setparams; ps009_cg_r1.txt; ps009_ep_r1.txt; ps009_mg_r1.txt
+Git diff for NPB-SER/config/make.def: empty
+Recovered make.def line endings: 103 CRLF; 0 lone LF
+Search scope: workspace; C:\Users\Destock\Downloads; filename-pattern search across C:\Users\Destock
+Not found: historical repaired build logs; /tmp/NPB-SER-R1; before/after CRLF record; exact compiler version; Docker image; host environment

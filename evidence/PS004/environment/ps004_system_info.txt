@@ -1,0 +1,4 @@
+Python 3.10.0
+torch= 2.0.0+cpu
+numpy= 1.23.5
+c15cc1834e22b858dbd2c1d36656f76116f2958b

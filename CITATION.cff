@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite the associated article and this archive."
+title: "Replication package for: What Breaks When Scientific Software Ages?"
+type: dataset
+authors:
+  - family-names: BOUARIFI
+    given-names: Walid
+    orcid: "https://orcid.org/0009-0000-6655-5031"
+    email: "w.bouarifi@uca.ma"
+  - family-names: BANA
+    given-names: Mouad
+    email: "mouadbana51@gmail.com"
+  - family-names: KHIRI
+    given-names: Soufiane
+    email: "s.khiri@uca.ac.ma"
+repository-code: "https://github.com/REPLACE_WITH_REPOSITORY"
+url: "https://doi.org/REPLACE_WITH_ZENODO_DOI"
+keywords:
+  - scientific software
+  - computational reproducibility
+  - software evolution
+  - reproducibility debt
+  - empirical software engineering

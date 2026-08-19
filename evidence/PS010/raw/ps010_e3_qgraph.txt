@@ -1,0 +1,3 @@
+* installing to library ‘/usr/local/lib/R/site-library’
+ERROR: dependencies ‘Hmisc’, ‘igraph’, ‘jpeg’, ‘png’, ‘reshape2’, ‘ggplot2’, ‘huge’, ‘d3Network’, ‘BDgraph’, ‘dplyr’, ‘tidygraph’, ‘ggraph’ are not available for package ‘qgraph’
+* removing ‘/usr/local/lib/R/site-library/qgraph’

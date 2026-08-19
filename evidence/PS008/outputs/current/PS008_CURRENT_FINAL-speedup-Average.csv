@@ -1,0 +1,6 @@
+Mean Speedup Report (T_ref/T_var): ref var = Base_Seq  ,  ,  ,  ,  , 
+Variant               , Base_Seq , Base_Seq , Base_Seq , RAJA_Seq , RAJA_Seq
+Tuning                , default  , kahan    , cascade  , default  , new     
+Basic_DAXPY           ,    1.000 ,  Not run ,  Not run ,    0.999 ,  Not run
+Stream_TRIAD          ,    1.000 ,  Not run ,  Not run ,    0.928 ,  Not run
+Algorithm_REDUCE_SUM  ,    1.000 ,    0.276 ,    0.905 ,    0.622 ,    0.988

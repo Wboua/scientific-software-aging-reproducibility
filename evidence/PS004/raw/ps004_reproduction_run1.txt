@@ -1,0 +1,13 @@
+C:\Users\Destock\Downloads\TimeXplusplus\.venv310\lib\site-packages\tslearn\bases\bases.py:15: UserWarning: h5py not installed, hdf5 features will not be supported.
+Install h5py to use hdf5 features: http://docs.h5py.org/
+  warn(h5py_msg)
+Traceback (most recent call last):
+  File "C:\Users\Destock\Downloads\TimeXplusplus\experiments\freqshape\bc_model_ptype.py", line 295, in <module>
+    main(args)
+  File "C:\Users\Destock\Downloads\TimeXplusplus\experiments\freqshape\bc_model_ptype.py", line 117, in main
+    D = process_Synth(split_no = i, device = device, base_path = '../../datasets/FreqShape/')
+  File "C:\Users\Destock\Downloads\TimeXplusplus\txai\utils\data\synth.py", line 11, in process_Synth
+    print("split_path\uff1a", split_path)
+  File "C:\Users\Destock\AppData\Local\Programs\Python\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\uff1a' in position 10: character maps to <undefined>

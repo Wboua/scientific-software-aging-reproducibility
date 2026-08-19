@@ -1,0 +1,7 @@
+case_id,execution_id,metric,value,unit,aggregation,n,source_file,source_locator,label,status,notes
+PS008,PS008-CURRENT,Base_Seq_Basic_DAXPY_runtime,0.675188,seconds,mean,UNKNOWN,evidence/PS008/outputs/current/PS008_CURRENT_FINAL-timing-Average.csv,Basic_DAXPY Base_Seq default,OUR-OBSERVED,READY-FOR-REVIEW,current configuration
+PS008,PS008-CURRENT,Base_Seq_Stream_TRIAD_runtime,1.662521,seconds,mean,UNKNOWN,evidence/PS008/outputs/current/PS008_CURRENT_FINAL-timing-Average.csv,Stream_TRIAD Base_Seq default,OUR-OBSERVED,READY-FOR-REVIEW,current configuration
+PS008,PS008-CURRENT,Base_Seq_Algorithm_REDUCE_SUM_runtime,0.100516,seconds,mean,UNKNOWN,evidence/PS008/outputs/current/PS008_CURRENT_FINAL-timing-Average.csv,Algorithm_REDUCE_SUM Base_Seq default,OUR-OBSERVED,READY-FOR-REVIEW,current configuration
+PS008,PS008-HISTORICAL,Base_Seq_Basic_DAXPY_runtime,2.010450,seconds,mean,UNKNOWN,evidence/PS008/outputs/historical/PS008_HIST_FINAL-timing-Average.csv,Basic_DAXPY Base_Seq default,OUR-OBSERVED,READY-FOR-REVIEW,historical configuration
+PS008,PS008-HISTORICAL,Base_Seq_Stream_TRIAD_runtime,5.633594,seconds,mean,UNKNOWN,evidence/PS008/outputs/historical/PS008_HIST_FINAL-timing-Average.csv,Stream_TRIAD Base_Seq default,OUR-OBSERVED,READY-FOR-REVIEW,historical configuration
+PS008,PS008-HISTORICAL,Base_Seq_Algorithm_REDUCE_SUM_runtime,0.268251,seconds,mean,UNKNOWN,evidence/PS008/outputs/historical/PS008_HIST_FINAL-timing-Average.csv,Algorithm_REDUCE_SUM Base_Seq default,OUR-OBSERVED,READY-FOR-REVIEW,historical configuration

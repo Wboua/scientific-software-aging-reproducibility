@@ -1,0 +1,90 @@
+Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘fs’, ‘sass’, ‘htmlwidgets’, ‘bslib’, ‘htmlTable’, ‘rmarkdown’, ‘Hmisc’, ‘qgraph’
+
+trying URL 'https://cloud.r-project.org/src/contrib/fs_2.1.0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/sass_0.4.10.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/htmlwidgets_1.6.4.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/bslib_0.12.0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/htmlTable_2.5.0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/rmarkdown_2.31.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/Hmisc_5.2-6.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/qgraph_1.10.1.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/mgm_1.2-15.tar.gz'
+* installing *source* package ‘fs’ ...
+** this is package ‘fs’ version ‘2.1.0’
+** package ‘fs’ successfully unpacked and MD5 sums checked
+** using staged installation
+Package libuv was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libuv.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libuv', required by 'virtual:world', not found
+Using PKG_CFLAGS=
+Using PKG_LIBS=-luv
+--------------------------- [CONFIGURE] --------------------------------
+Configuration failed because libuv was not found. Try installing:
+ * deb: libuv1-dev (Debian, Ubuntu, etc)
+ * rpm: libuv-devel (Fedora, EPEL)
+ * brew: libuv (OSX)
+Alternatively set environment variable USE_BUNDLED_LIBUV=1 to build a static
+version of libuv that is included with this package.
+-------------------------- [ERROR MESSAGE] ---------------------------
+<stdin>:1:10: fatal error: uv.h: No such file or directory
+compilation terminated.
+--------------------------------------------------------------------
+ERROR: configuration failed for package ‘fs’
+* removing ‘/usr/local/lib/R/site-library/fs’
+ERROR: dependency ‘fs’ is not available for package ‘sass’
+Perhaps try a variation of:
+install.packages('fs')
+* removing ‘/usr/local/lib/R/site-library/sass’
+ERROR: dependency ‘sass’ is not available for package ‘bslib’
+Perhaps try a variation of:
+install.packages('sass')
+* removing ‘/usr/local/lib/R/site-library/bslib’
+ERROR: dependency ‘bslib’ is not available for package ‘rmarkdown’
+Perhaps try a variation of:
+install.packages('bslib')
+* removing ‘/usr/local/lib/R/site-library/rmarkdown’
+ERROR: dependency ‘rmarkdown’ is not available for package ‘htmlwidgets’
+Perhaps try a variation of:
+install.packages('rmarkdown')
+* removing ‘/usr/local/lib/R/site-library/htmlwidgets’
+ERROR: dependency ‘htmlwidgets’ is not available for package ‘htmlTable’
+Perhaps try a variation of:
+install.packages('htmlwidgets')
+* removing ‘/usr/local/lib/R/site-library/htmlTable’
+ERROR: dependencies ‘htmlTable’, ‘rmarkdown’ are not available for package ‘Hmisc’
+Perhaps try a variation of:
+install.packages(c('htmlTable', 'rmarkdown'))
+* removing ‘/usr/local/lib/R/site-library/Hmisc’
+ERROR: dependency ‘Hmisc’ is not available for package ‘qgraph’
+Perhaps try a variation of:
+install.packages('Hmisc')
+* removing ‘/usr/local/lib/R/site-library/qgraph’
+ERROR: dependencies ‘Hmisc’, ‘qgraph’ are not available for package ‘mgm’
+Perhaps try a variation of:
+install.packages(c('Hmisc', 'qgraph'))
+* removing ‘/usr/local/lib/R/site-library/mgm’
+
+The downloaded source packages are in
+	‘/tmp/RtmppCnlql/downloaded_packages’
+Warning messages:
+1: In install.packages("mgm", repos = "https://cloud.r-project.org",  :
+  installation of package ‘fs’ had non-zero exit status
+2: In install.packages("mgm", repos = "https://cloud.r-project.org",  :
+  installation of package ‘sass’ had non-zero exit status
+3: In install.packages("mgm", repos = "https://cloud.r-project.org",  :
+  installation of package ‘bslib’ had non-zero exit status
+4: In install.packages("mgm", repos = "https://cloud.r-project.org",  :
+  installation of package ‘rmarkdown’ had non-zero exit status
+5: In install.packages("mgm", repos = "https://cloud.r-project.org",  :
+  installation of package ‘htmlwidgets’ had non-zero exit status
+6: In install.packages("mgm", repos = "https://cloud.r-project.org",  :
+  installation of package ‘htmlTable’ had non-zero exit status
+7: In install.packages("mgm", repos = "https://cloud.r-project.org",  :
+  installation of package ‘Hmisc’ had non-zero exit status
+8: In install.packages("mgm", repos = "https://cloud.r-project.org",  :
+  installation of package ‘qgraph’ had non-zero exit status
+9: In install.packages("mgm", repos = "https://cloud.r-project.org",  :
+  installation of package ‘mgm’ had non-zero exit status

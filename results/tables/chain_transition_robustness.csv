@@ -1,0 +1,6 @@
+transition,eligible_cases,degraded_cases,degraded_case_ids,degradation_percent
+A->I,8,1,PS010,12.5
+I->B,6,0,,0.0
+B->E,6,2,PS004;PS006,33.3
+E->N,4,1,PS005,25.0
+N->P,1,1,PS008,100.0

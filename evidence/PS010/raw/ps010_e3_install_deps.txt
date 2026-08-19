@@ -1,0 +1,88 @@
+Installing packages into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+Warning: dependencies ‘Hmisc’, ‘ggplot2’, ‘rlang’, ‘vctrs’, ‘cpp11’, ‘stringr’ are not available
+also installing the dependencies ‘lifecycle’, ‘igraph’, ‘jpeg’, ‘png’, ‘reshape2’
+
+trying URL 'https://cloud.r-project.org/src/contrib/lifecycle_1.0.5.tar.gz'
+Content type 'application/x-gzip' length 107137 bytes (104 KB)
+==================================================
+downloaded 104 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/igraph_2.3.3.tar.gz'
+Content type 'application/x-gzip' length 5215250 bytes (5.0 MB)
+==================================================
+downloaded 5.0 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/jpeg_0.1-11.tar.gz'
+Content type 'application/x-gzip' length 19302 bytes (18 KB)
+==================================================
+downloaded 18 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/png_0.1-9.tar.gz'
+Content type 'application/x-gzip' length 24939 bytes (24 KB)
+==================================================
+downloaded 24 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/reshape2_1.4.5.tar.gz'
+Content type 'application/x-gzip' length 38080 bytes (37 KB)
+==================================================
+downloaded 37 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/qgraph_1.10.1.tar.gz'
+Content type 'application/x-gzip' length 268882 bytes (262 KB)
+==================================================
+downloaded 262 KB
+
+ERROR: dependency ‘rlang’ is not available for package ‘lifecycle’
+* removing ‘/usr/local/lib/R/site-library/lifecycle’
+* installing *source* package ‘jpeg’ ...
+** package ‘jpeg’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c read.c -o read.o
+In file included from read.c:1:
+rjcommon.h:11:10: fatal error: jpeglib.h: No such file or directory
+ #include <jpeglib.h>
+          ^~~~~~~~~~~
+compilation terminated.
+make: *** [/usr/local/lib/R/etc/Makeconf:168: read.o] Error 1
+ERROR: compilation failed for package ‘jpeg’
+* removing ‘/usr/local/lib/R/site-library/jpeg’
+* installing *source* package ‘png’ ...
+** package ‘png’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include  `libpng-config --cflags` -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dummy.c -o dummy.o
+/bin/bash: libpng-config: command not found
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include  `libpng-config --cflags` -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c read.c -o read.o
+/bin/bash: libpng-config: command not found
+read.c:3:10: fatal error: png.h: No such file or directory
+ #include <png.h>
+          ^~~~~~~
+compilation terminated.
+make: *** [/usr/local/lib/R/etc/Makeconf:168: read.o] Error 1
+ERROR: compilation failed for package ‘png’
+* removing ‘/usr/local/lib/R/site-library/png’
+ERROR: dependency ‘stringr’ is not available for package ‘reshape2’
+* removing ‘/usr/local/lib/R/site-library/reshape2’
+ERROR: dependencies ‘lifecycle’, ‘rlang’, ‘vctrs’, ‘cpp11’ are not available for package ‘igraph’
+* removing ‘/usr/local/lib/R/site-library/igraph’
+ERROR: dependencies ‘Hmisc’, ‘igraph’, ‘jpeg’, ‘png’, ‘reshape2’, ‘ggplot2’ are not available for package ‘qgraph’
+* removing ‘/usr/local/lib/R/site-library/qgraph’
+
+The downloaded source packages are in
+	‘/tmp/Rtmpcu961L/downloaded_packages’
+Warning messages:
+1: packages ‘stringr’, ‘Hmisc’ are not available (for R version 3.6.3) 
+2: In install.packages(c("stringr", "Hmisc", "qgraph"), repos = "https://cloud.r-project.org",  :
+  installation of package ‘lifecycle’ had non-zero exit status
+3: In install.packages(c("stringr", "Hmisc", "qgraph"), repos = "https://cloud.r-project.org",  :
+  installation of package ‘jpeg’ had non-zero exit status
+4: In install.packages(c("stringr", "Hmisc", "qgraph"), repos = "https://cloud.r-project.org",  :
+  installation of package ‘png’ had non-zero exit status
+5: In install.packages(c("stringr", "Hmisc", "qgraph"), repos = "https://cloud.r-project.org",  :
+  installation of package ‘reshape2’ had non-zero exit status
+6: In install.packages(c("stringr", "Hmisc", "qgraph"), repos = "https://cloud.r-project.org",  :
+  installation of package ‘igraph’ had non-zero exit status
+7: In install.packages(c("stringr", "Hmisc", "qgraph"), repos = "https://cloud.r-project.org",  :
+  installation of package ‘qgraph’ had non-zero exit status

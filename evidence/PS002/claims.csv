@@ -1,0 +1,5 @@
+claim_id,case_id,label,claim,raw_evidence,transformation,normalized_evidence,matrix_field,manuscript_location,status,supporting_claim_ids,notes
+PS002-C001,PS002,AUTHOR-REPORTED,"The artifact requires a Linux system with an NVIDIA GPU driver and reports an RTX 3090 reference GPU.",evidence/PS002/raw/README.md,Direct extraction,,H,,READY-FOR-REVIEW,,README hardware requirements section.
+PS002-C002,PS002,AUTHOR-REPORTED,"The supplied container uses an NVIDIA CUDA 11.6 development image.",evidence/PS002/raw/Dockerfile,Direct extraction,,H,,READY-FOR-REVIEW,,Dockerfile first line.
+PS002-C003,PS002,OUR-OBSERVED,"No standalone retained host GPU probe was recovered.",evidence/MISSING_EVIDENCE.csv,Recovery tracker review,,H,,TRACE-INCOMPLETE,,Intel Iris Xe remains a protected observation but lacks publication-grade raw host output.
+PS002-C004,PS002,INFERENCE,"The current evaluation is hardware-constrained rather than an artifact execution failure.","evidence/PS002/raw/README.md; evidence/MISSING_EVIDENCE.csv",Conservative prerequisite classification,,E,,READY-FOR-REVIEW,PS002-C001;PS002-C003,"Use H=UNSAT and E=N/A."

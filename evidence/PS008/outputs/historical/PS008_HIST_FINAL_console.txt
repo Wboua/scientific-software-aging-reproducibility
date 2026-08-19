@@ -1,0 +1,696 @@
+
+
+Reading command line input...
+
+Setting up suite based on input...
+
+
+RAJA performance suite run summary....
+--------------------------------------
+
+How suite will be run:
+	 # passes = 30
+	 Kernel size factor = 1
+	 Kernel rep factor = 1
+	 Output files will be named /work/results-hist-final/PS008_HIST_FINAL*
+
+The following kernels and variants (when available for a kernel) will be run:
+
+Data Spaces
+--------
+Seq - Host
+
+Reduction Data Spaces
+--------
+Seq - Host
+
+MPI Data Spaces
+--------
+Seq - Host
+
+Variants and Tunings
+--------
+Base_Seq-default
+RAJA_Seq-default
+RAJA_Seq-new
+
+Kernels                ,    Problem size ,    Reps ,    Iterations/rep , Kernels/rep ,    Bytes/rep ,    FLOPS/rep ,    BytesRead/rep ,    BytesWritten/rep ,    BytesAtomicModifyWritten/rep
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Basic_DAXPY            ,         1000000 ,     500 ,           1000000 ,           1 ,     24000000 ,      2000000 ,         16000000 ,             8000000 ,                               0
+Stream_TRIAD           ,         1000000 ,    1000 ,           1000000 ,           1 ,     24000000 ,      2000000 ,         16000000 ,             8000000 ,                               0
+Algorithm_REDUCE_SUM   ,         1000000 ,      50 ,           1000000 ,           1 ,      8000016 ,      1000000 ,          8000008 ,                   8 ,                               0
+
+
+Run warmup kernels...
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 2.54316 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 3.0586 sec.
+
+Run kernel -- Basic_REDUCE3_INT
+	Running Base_Seq variant
+		Running default tuning -- 0.114639 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.361846 sec.
+		Running new tuning -- 0.0927256 sec.
+
+
+Running specified kernels and variants...
+
+Pass through suite # 0
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 2.59887 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 2.07883 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 6.33304 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 6.28091 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.262068 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.349503 sec.
+		Running new tuning -- 0.213808 sec.
+
+Pass through suite # 1
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.98672 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.91565 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 6.17378 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 6.76765 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.305272 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.395868 sec.
+		Running new tuning -- 0.279921 sec.
+
+Pass through suite # 2
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 2.00801 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.8758 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 6.53608 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 9.53014 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.344446 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.39416 sec.
+		Running new tuning -- 0.359665 sec.
+
+Pass through suite # 3
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 2.18646 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.78072 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 6.45645 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 6.43491 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.223741 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.452487 sec.
+		Running new tuning -- 0.282288 sec.
+
+Pass through suite # 4
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.96499 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.89487 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 8.33779 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 9.11866 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.400593 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.620564 sec.
+		Running new tuning -- 0.435461 sec.
+
+Pass through suite # 5
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 3.30371 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 3.3744 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 9.05658 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 8.69597 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.384611 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.595581 sec.
+		Running new tuning -- 0.445778 sec.
+
+Pass through suite # 6
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 3.14137 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 2.60484 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 5.35144 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 4.79379 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.212944 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.292416 sec.
+		Running new tuning -- 0.207931 sec.
+
+Pass through suite # 7
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.64141 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.75351 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 5.76103 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 4.92839 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.426854 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.321794 sec.
+		Running new tuning -- 0.246089 sec.
+
+Pass through suite # 8
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.80383 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.46315 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 4.1676 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 6.47651 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.259373 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.500732 sec.
+		Running new tuning -- 0.41496 sec.
+
+Pass through suite # 9
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 2.85926 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 2.03333 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 6.55267 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 4.72195 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.293977 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.383779 sec.
+		Running new tuning -- 0.251722 sec.
+
+Pass through suite # 10
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 2.70511 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.57201 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 4.16765 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 4.14779 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.19181 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.342024 sec.
+		Running new tuning -- 0.21273 sec.
+
+Pass through suite # 11
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.57444 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.54665 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 4.64432 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 5.14707 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.330149 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.283259 sec.
+		Running new tuning -- 0.241715 sec.
+
+Pass through suite # 12
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 2.08437 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.49519 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 5.36598 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 7.36015 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.180471 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.264353 sec.
+		Running new tuning -- 0.205501 sec.
+
+Pass through suite # 13
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.54386 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.37356 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 4.53185 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 4.34523 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.172599 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.260634 sec.
+		Running new tuning -- 0.170588 sec.
+
+Pass through suite # 14
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.50355 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.50748 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 4.21489 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 4.0096 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.182046 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.25914 sec.
+		Running new tuning -- 0.207755 sec.
+
+Pass through suite # 15
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.45767 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.54716 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 4.52152 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 6.12315 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.226817 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.370933 sec.
+		Running new tuning -- 0.220951 sec.
+
+Pass through suite # 16
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.66035 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 2.78773 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 7.16949 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 6.57638 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.315803 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.426334 sec.
+		Running new tuning -- 0.328613 sec.
+
+Pass through suite # 17
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 2.63587 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.91599 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 6.35178 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 7.51989 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.338911 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.526556 sec.
+		Running new tuning -- 0.270628 sec.
+
+Pass through suite # 18
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.94933 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 2.32858 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 6.31411 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 9.4152 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.21219 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.41284 sec.
+		Running new tuning -- 0.257108 sec.
+
+Pass through suite # 19
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 2.01889 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.70934 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 5.8582 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 7.58545 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.40699 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.657306 sec.
+		Running new tuning -- 0.431617 sec.
+
+Pass through suite # 20
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 2.07903 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 2.32187 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 6.73513 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 6.24269 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.237671 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.376392 sec.
+		Running new tuning -- 0.289982 sec.
+
+Pass through suite # 21
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 2.11499 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 2.13418 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 5.00399 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 4.35098 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.175994 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.293228 sec.
+		Running new tuning -- 0.148293 sec.
+
+Pass through suite # 22
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.34311 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.28994 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 5.10666 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 3.81921 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.1539 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.271912 sec.
+		Running new tuning -- 0.155499 sec.
+
+Pass through suite # 23
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.33271 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.36425 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 4.2626 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 3.92968 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.166259 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.261058 sec.
+		Running new tuning -- 0.168267 sec.
+
+Pass through suite # 24
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.36899 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.55717 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 3.97416 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 3.65314 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.215604 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.269202 sec.
+		Running new tuning -- 0.184478 sec.
+
+Pass through suite # 25
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.83763 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.72927 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 4.43423 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 4.44687 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.192469 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.330036 sec.
+		Running new tuning -- 0.248761 sec.
+
+Pass through suite # 26
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.72461 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.65678 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 5.9036 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 5.27343 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.410204 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.698459 sec.
+		Running new tuning -- 0.411132 sec.
+
+Pass through suite # 27
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.99327 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.83542 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 4.70082 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 5.30713 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.243417 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.419098 sec.
+		Running new tuning -- 0.319214 sec.
+
+Pass through suite # 28
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 1.62108 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.64411 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 4.11816 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 5.65734 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.375134 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.516911 sec.
+		Running new tuning -- 0.25234 sec.
+
+Pass through suite # 29
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running default tuning -- 2.27001 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 1.90223 sec.
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running default tuning -- 6.90224 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 5.61632 sec.
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running default tuning -- 0.205211 sec.
+	Running RAJA_Seq variant
+		Running default tuning -- 0.300746 sec.
+		Running new tuning -- 0.281687 sec.
+
+
+Generate run report files...
+
+
+DONE!!!....

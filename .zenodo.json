@@ -1,0 +1,12 @@
+{
+  "title": "Replication package for: What Breaks When Scientific Software Ages?",
+  "description": "Evidence, normalized data, analysis scripts, figures, and manuscript sources for a ten-case empirical study of long-term scientific-software reproducibility, repairability, and fidelity.",
+  "upload_type": "dataset",
+  "creators": [
+    {"name": "BOUARIFI, Walid", "orcid": "0009-0000-6655-5031", "affiliation": "Laboratory in Intelligent and Sustainable Technologies (LaRTID), National School of Applied Sciences of Marrakech, Cadi Ayyad University, Morocco"},
+    {"name": "BANA, Mouad", "affiliation": "Laboratory in Intelligent and Sustainable Technologies (LaRTID), National School of Applied Sciences of Marrakech, Cadi Ayyad University, Morocco"},
+    {"name": "KHIRI, Soufiane", "affiliation": "Laboratory in Intelligent and Sustainable Technologies (LaRTID), National School of Applied Sciences of Marrakech, Cadi Ayyad University, Morocco"}
+  ],
+  "keywords": ["scientific software", "computational reproducibility", "software evolution", "reproducibility debt", "empirical software engineering"],
+  "notes": "Replace the repository URL and DOI placeholders in CITATION.cff after public release."
+}

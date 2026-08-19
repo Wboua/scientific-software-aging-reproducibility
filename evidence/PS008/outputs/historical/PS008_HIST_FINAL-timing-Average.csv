@@ -1,0 +1,6 @@
+Mean Runtime Report (sec.)  ,  ,  , 
+Kernel                , Base_Seq , RAJA_Seq , RAJA_Seq
+Kernel                , default  , default  , new     
+Basic_DAXPY           , 2.010450 , 1.866467 ,  Not run
+Stream_TRIAD          , 5.633594 , 5.942519 ,  Not run
+Algorithm_REDUCE_SUM  , 0.268251 , 0.394910 , 0.271483

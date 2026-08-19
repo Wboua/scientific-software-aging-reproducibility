@@ -1,0 +1,10 @@
+Recovery date: 2026-08-15
+Current source: C:\Users\Destock\Downloads\PS008-RAJAPerf
+Current commit: 338cfeb7266607648bd06815ba103f61e357c2e5
+Current describe: v2025.12.1-213-g338cfeb7
+Current submodules: BLT e783e30f2823ee1a208f7f90741b41c1f5a08063; RAJA 4302ac72dd7b039e94e143176ba4c9428237b402; Kokkos f572302292068a22672ab0012adaeeee0596fcea
+Historical source: C:\Users\Destock\Downloads\PS008-RAJAPerf-HIST
+Historical commit: 6e81aa58af244a13755a694bfdc7bc301139a244
+Historical describe: v2024.07.0
+Historical submodules: BLT 9ff77344f0b2a6ee345e452bddd6bfd46cbbfa35; RAJA 378199aac342ee21c2ddfbcbb48413bd1dfac612; Kokkos 2834f94af9b01debf67c1aaa3f0eb0c903d72c8d
+Both recovered CMake logs: Linux 6.6.87.2-microsoft-standard-WSL2 x86_64; CMake 3.27.9; GNU C++ 11.4.0.

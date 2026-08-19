@@ -1,0 +1,3 @@
+* installing to library ‘/usr/local/lib/R/site-library’
+ERROR: dependencies ‘glue’, ‘stringi’ are not available for package ‘stringr’
+* removing ‘/usr/local/lib/R/site-library/stringr’

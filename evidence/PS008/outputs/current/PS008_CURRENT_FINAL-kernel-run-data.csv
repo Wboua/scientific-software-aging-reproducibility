@@ -1,0 +1,11 @@
+Kernels run without MPI
+Kernel                 , Variant    , Tuning    ,    Problem size , Checksum   ,    Mean time per rep (sec.) ,    Mean Bandwidth (GiB per sec.) ,    Mean flops (gigaFLOP per sec.)
+Basic_DAXPY            , Base_Seq   , default   ,         1000000 , PASSED     ,                  0.00135038 ,                          16.5522 ,                           1.48107
+Basic_DAXPY            , RAJA_Seq   , default   ,         1000000 , PASSED     ,                  0.00135113 ,                          16.5430 ,                           1.48024
+Stream_TRIAD           , Base_Seq   , default   ,         1000000 , PASSED     ,                  0.00166252 ,                          13.4445 ,                           1.20299
+Stream_TRIAD           , RAJA_Seq   , default   ,         1000000 , PASSED     ,                  0.00179238 ,                          12.4704 ,                           1.11583
+Algorithm_REDUCE_SUM   , Base_Seq   , default   ,         1000000 , PASSED     ,                  0.00201031 ,                          3.70618 ,                          0.497435
+Algorithm_REDUCE_SUM   , Base_Seq   , kahan     ,         1000000 , PASSED     ,                  0.00727237 ,                          1.02450 ,                          0.137507
+Algorithm_REDUCE_SUM   , Base_Seq   , cascade   ,         1000000 , PASSED     ,                  0.00222214 ,                          3.35289 ,                          0.450017
+Algorithm_REDUCE_SUM   , RAJA_Seq   , default   ,         1000000 , PASSED     ,                  0.00323025 ,                          2.30650 ,                          0.309573
+Algorithm_REDUCE_SUM   , RAJA_Seq   , new       ,         1000000 , PASSED     ,                  0.00203418 ,                          3.66270 ,                          0.491599

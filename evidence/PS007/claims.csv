@@ -1,0 +1,5 @@
+claim_id,case_id,label,claim,raw_evidence,transformation,normalized_evidence,matrix_field,manuscript_location,status,supporting_claim_ids,notes
+PS007-C001,PS007,AUTHOR-REPORTED,"The executable artifact is a VirtualBox VM because BenchExec does not run in Docker.",evidence/PS007/raw/README.md,Direct extraction,,H,,READY-FOR-REVIEW,,Artifact README.
+PS007-C002,PS007,AUTHOR-REPORTED,"The artifact documents eight CPU cores and distinct full/reduced resource requirements.",evidence/PS007/raw/README.md,Direct extraction,,H,,READY-FOR-REVIEW,,Artifact README requirements section.
+PS007-C003,PS007,OUR-OBSERVED,"No standalone VM import or startup transcript was recovered.",evidence/MISSING_EVIDENCE.csv,Recovery tracker review,,H,,TRACE-INCOMPLETE,,The protected VERR_UNRESOLVED_ERROR observation is not promoted as publication-grade raw evidence.
+PS007-C004,PS007,INFERENCE,"The case remains infrastructure-constrained and E is N/A rather than FAIL.","evidence/PS007/raw/README.md; evidence/MISSING_EVIDENCE.csv",Conservative prerequisite classification,,E,,READY-FOR-REVIEW,PS007-C001;PS007-C003,"Do not reinterpret the VM startup problem as algorithm failure."

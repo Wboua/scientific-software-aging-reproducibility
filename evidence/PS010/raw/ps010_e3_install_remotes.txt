@@ -1,0 +1,24 @@
+Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/src/contrib/remotes_2.5.0.tar.gz'
+Content type 'application/x-gzip' length 164496 bytes (160 KB)
+==================================================
+downloaded 160 KB
+
+* installing *source* package ‘remotes’ ...
+** package ‘remotes’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (remotes)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp2y2rhA/downloaded_packages’

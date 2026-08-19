@@ -1,0 +1,23 @@
+* installing to library ‘/usr/local/lib/R/site-library’
+* installing *source* package ‘glue’ ...
+** package ‘glue’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c glue.c -o glue.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c trim.c -o trim.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o glue.so glue.o init.o trim.o -L/usr/local/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/00LOCK-glue/00new/glue/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (glue)

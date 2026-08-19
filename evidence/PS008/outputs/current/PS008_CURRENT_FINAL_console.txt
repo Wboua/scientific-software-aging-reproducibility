@@ -1,0 +1,760 @@
+
+
+Reading command line input...
+
+Setting up suite based on input...
+
+
+RAJA performance suite run summary....
+--------------------------------------
+
+How suite will be run:
+	 # passes = 30
+	 Kernel size = Default
+	 Kernel min size = 0
+	 Kernel size factor = 1
+	 Kernel rep factor = 1
+	 Output files will be named /work/results-current-final/PS008_CURRENT_FINAL*
+
+The following kernels and variants (when available for a kernel) will be run:
+
+Data Spaces
+--------
+Seq - Host
+
+Reduction Data Spaces
+--------
+Seq - Host
+
+MPI Data Spaces
+--------
+Seq - Host
+
+Variants and Tunings
+--------
+Base_Seq-default
+Base_Seq-kahan
+Base_Seq-cascade
+RAJA_Seq-default
+RAJA_Seq-new
+
+Kernel                 ,    Problem size ,    Reps ,    Iterations/rep ,    Kernels/rep ,    BytesMoved/rep ,    FLOPS/rep ,    BytesTouched/rep ,    BytesRead/rep ,    BytesWritten/rep ,    BytesModifyWritten/rep ,    BytesAtomicModifyWritten/rep ,    BytesAllocated/rep , ChecksumConsistency          , OperationalComplexity   , MaxPerfectLoopDimensions    , ProblemDimensionality   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Basic_DAXPY            ,         1000000 ,     500 ,           1000000 ,              1 ,          24000000 ,      2000000 ,            16000000 ,         16000000 ,             8000000 ,                   8000000 ,                               0 ,              16000000 , ConsistentPerVariantTuning   , O(N)                    ,                           1 ,                        1
+Stream_TRIAD           ,         1000000 ,    1000 ,           1000000 ,              1 ,          24000000 ,      2000000 ,            24000000 ,         16000000 ,             8000000 ,                         0 ,                               0 ,              24000000 , ConsistentPerVariantTuning   , O(N)                    ,                           1 ,                        1
+Algorithm_REDUCE_SUM   ,         1000000 ,      50 ,           1000000 ,              1 ,           8000000 ,      1000000 ,             8000000 ,          8000000 ,                   0 ,                         0 ,                               0 ,               8000000 , Inconsistent                 , O(N)                    ,                           1 ,                        1
+
+
+Run warmup kernels...
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00155953 sec. x 1 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.0019159 sec. x 1 rep. PASSED checksum
+
+Run kernel -- Basic_REDUCE3_INT
+	Running Base_Seq variant
+		Running      default tuning -- 0.000636077 sec. x 1 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00122269 sec. x 1 rep. PASSED checksum
+		Running          new tuning -- 0.000649565 sec. x 1 rep. PASSED checksum
+
+
+Running specified kernels and variants...
+
+Pass through suite # 0
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00150138 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00144997 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00175212 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00148854 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00245652 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.0122841 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00181597 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00392735 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00302207 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 1
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00150121 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00138411 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00154275 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00178903 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00236334 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00749643 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00176086 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00282266 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00206902 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 2
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00138549 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.0012767 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00136769 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00185502 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00189277 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00742653 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00197468 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00297938 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00176057 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 3
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.0014425 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00119987 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00138358 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00203999 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00207897 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00557459 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00159701 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00262016 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00173624 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 4
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00129877 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00134768 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00237534 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00248074 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00218596 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00792892 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00248962 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00384038 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00236182 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 5
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00144768 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00126265 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00149727 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00161526 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00174133 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00821418 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00353811 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00370495 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00183516 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 6
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00113684 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00124115 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00142065 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.0014714 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00253885 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00601905 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00150761 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00268334 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00191404 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 7
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00119255 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00108558 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00146082 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00138929 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00184659 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00725617 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00357659 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.0038031 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00162828 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 8
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00117568 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00125537 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00155985 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00138838 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00180336 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00598581 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00165896 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00244274 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00176211 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 9
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.0011788 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00107406 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00145437 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00135411 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00153927 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00680114 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.0032589 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00403398 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00253458 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 10
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00136555 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00119076 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00153209 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00164241 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.0017737 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00601231 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00175625 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00257103 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00215907 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 11
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00126619 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00127694 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00177917 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00207193 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00196056 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.0060253 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00186608 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00293335 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00211186 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 12
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00147189 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00154131 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00141537 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00147927 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00168663 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00621419 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00189415 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00267245 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00204912 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 13
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00120354 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00107593 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00142947 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00183795 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00196433 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00721374 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00217686 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00317357 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00199174 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 14
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00109913 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00115815 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00139848 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00141165 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00168434 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00553626 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00159193 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00266232 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00167622 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 15
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.0011913 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00111858 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00140468 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00178447 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00204364 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00713424 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00227405 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00250202 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00203503 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 16
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00114107 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00109249 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00137397 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00194501 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00185882 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00750336 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00230648 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.0028649 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00195402 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 17
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00118321 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00139096 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00195158 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00253436 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00254764 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.0110657 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00246469 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00309756 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00217676 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 18
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00143218 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00136603 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00171042 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00178402 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00196997 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00980898 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00373167 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.004754 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00236208 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 19
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00147818 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.0017854 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.0020476 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00212608 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00195277 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00725583 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00351464 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00703732 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00409341 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 20
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00279434 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00290362 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00238683 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.0020154 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00219256 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00748471 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00226756 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00244288 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00153104 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 21
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.0011563 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00115311 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00165809 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00189143 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00160049 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00590863 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00187143 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00341285 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00183541 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 22
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00166063 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00111438 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00186851 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00168416 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00204041 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00750668 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00201345 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.0032859 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00189939 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 23
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00125268 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00136755 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00186191 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00181138 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00245971 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00763509 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00178234 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00346155 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00217507 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 24
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.0012456 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00127393 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00176617 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00155435 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00147991 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00576902 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00222224 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00320869 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00182332 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 25
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00105589 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00163075 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00197767 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00173857 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.001512 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00696299 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00172952 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00261422 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00161203 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 26
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00108325 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.0010797 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.0016865 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.0021758 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00352593 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00875182 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00182355 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00312664 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00170413 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 27
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00129641 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00158618 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00174769 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00173066 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00206557 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00615307 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00187477 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00248879 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00167877 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 28
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00129972 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00130511 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.00149909 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00214735 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00167596 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00743409 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00232007 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.0030694 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00145959 sec. x 50 rep. PASSED checksum
+
+Pass through suite # 29
+
+Run kernel -- Basic_DAXPY
+	Running Base_Seq variant
+		Running      default tuning -- 0.00157335 sec. x 500 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00154594 sec. x 500 rep. PASSED checksum
+
+Run kernel -- Stream_TRIAD
+	Running Base_Seq variant
+		Running      default tuning -- 0.0015659 sec. x 1000 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00153348 sec. x 1000 rep. PASSED checksum
+
+Run kernel -- Algorithm_REDUCE_SUM
+	Running Base_Seq variant
+		Running      default tuning -- 0.00186748 sec. x 50 rep. PASSED checksum
+		Running        kahan tuning -- 0.00580825 sec. x 50 rep. PASSED checksum
+		Running      cascade tuning -- 0.00200403 sec. x 50 rep. PASSED checksum
+	Running RAJA_Seq variant
+		Running      default tuning -- 0.00267017 sec. x 50 rep. PASSED checksum
+		Running          new tuning -- 0.00207336 sec. x 50 rep. PASSED checksum
+
+
+Generate run report files...
+
+
+DONE!!!....

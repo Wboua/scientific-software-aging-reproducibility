@@ -1,0 +1,343 @@
+Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘sass’, ‘crayon’, ‘htmlwidgets’, ‘bslib’, ‘otel’, ‘fs’, ‘pkgbuild’, ‘rprojroot’, ‘diffobj’, ‘htmlTable’, ‘rmarkdown’, ‘png’, ‘brio’, ‘callr’, ‘desc’, ‘pkgload’, ‘praise’, ‘processx’, ‘ps’, ‘waldo’, ‘Hmisc’, ‘qgraph’, ‘testthat’
+
+trying URL 'https://cloud.r-project.org/src/contrib/sass_0.4.10.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/crayon_1.5.3.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/htmlwidgets_1.6.4.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/bslib_0.12.0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/otel_0.2.0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/fs_2.1.0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/pkgbuild_1.4.8.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/rprojroot_2.1.1.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/diffobj_0.3.8.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/htmlTable_2.5.0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/rmarkdown_2.31.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/png_0.1-9.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/brio_1.1.5.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/callr_3.8.0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/desc_1.4.3.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/pkgload_1.5.3.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/praise_1.0.0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/processx_3.9.0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/ps_1.9.3.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/waldo_0.6.2.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/Hmisc_5.2-6.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/qgraph_1.10.1.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/testthat_3.3.2.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/mgm_1.2-15.tar.gz'
+* installing *source* package ‘crayon’ ...
+** this is package ‘crayon’ version ‘1.5.3’
+** package ‘crayon’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (crayon)
+* installing *source* package ‘otel’ ...
+** this is package ‘otel’ version ‘0.2.0’
+** package ‘otel’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (otel)
+* installing *source* package ‘fs’ ...
+** this is package ‘fs’ version ‘2.1.0’
+** package ‘fs’ successfully unpacked and MD5 sums checked
+** using staged installation
+Using PKG_CFLAGS=
+Using PKG_LIBS=-luv
+--------------------------- [CONFIGURE] --------------------------------
+Configuration failed because libuv was not found. Try installing:
+ * deb: libuv1-dev (Debian, Ubuntu, etc)
+ * rpm: libuv-devel (Fedora, EPEL)
+ * brew: libuv (OSX)
+Alternatively set environment variable USE_BUNDLED_LIBUV=1 to build a static
+version of libuv that is included with this package.
+-------------------------- [ERROR MESSAGE] ---------------------------
+<stdin>:1:10: fatal error: uv.h: No such file or directory
+compilation terminated.
+--------------------------------------------------------------------
+ERROR: configuration failed for package ‘fs’
+* removing ‘/usr/local/lib/R/site-library/fs’
+* installing *source* package ‘rprojroot’ ...
+** this is package ‘rprojroot’ version ‘2.1.1’
+** package ‘rprojroot’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rprojroot)
+* installing *source* package ‘png’ ...
+** this is package ‘png’ version ‘0.1-9’
+** package ‘png’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0’
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    `libpng-config --cflags` -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dummy.c -o dummy.o
+/bin/bash: line 1: libpng-config: command not found
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    `libpng-config --cflags` -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c read.c -o read.o
+/bin/bash: line 1: libpng-config: command not found
+read.c:3:10: fatal error: png.h: No such file or directory
+    3 | #include <png.h>
+      |          ^~~~~~~
+compilation terminated.
+make: *** [/usr/local/lib/R/etc/Makeconf:190: read.o] Error 1
+ERROR: compilation failed for package ‘png’
+* removing ‘/usr/local/lib/R/site-library/png’
+* installing *source* package ‘brio’ ...
+** this is package ‘brio’ version ‘1.1.5’
+** package ‘brio’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0’
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c brio.c -o brio.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c file_line_endings.c -o file_line_endings.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c read_file.c -o read_file.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c read_file_raw.c -o read_file_raw.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c read_lines.c -o read_lines.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c write_file.c -o write_file.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c write_file_raw.c -o write_file_raw.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c write_lines.c -o write_lines.o
+gcc -std=gnu2x -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o brio.so brio.o file_line_endings.o init.o read_file.o read_file_raw.o read_lines.o write_file.o write_file_raw.o write_lines.o -L/usr/local/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/00LOCK-brio/00new/brio/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (brio)
+* installing *source* package ‘desc’ ...
+** this is package ‘desc’ version ‘1.4.3’
+** package ‘desc’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (desc)
+* installing *source* package ‘praise’ ...
+** this is package ‘praise’ version ‘1.0.0’
+** package ‘praise’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (praise)
+* installing *source* package ‘ps’ ...
+** this is package ‘ps’ version ‘1.9.3’
+** package ‘ps’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0’
+gcc -std=gnu2x -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -L/usr/local/lib -Wall px.c -o px
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c api-common.c -o api-common.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c common.c -o common.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c extra.c -o extra.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dummy.c -o dummy.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c error-codes.c -o error-codes.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cleancall.c -o cleancall.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c posix.c -o posix.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c api-posix.c -o api-posix.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c linux.c -o linux.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c api-linux.c -o api-linux.o
+gcc -std=gnu2x -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o ps.so init.o api-common.o common.o extra.o dummy.o error-codes.o cleancall.o posix.o api-posix.o linux.o api-linux.o -L/usr/local/lib/R/lib -lR
+installing via 'install.libs.R' to /usr/local/lib/R/site-library/00LOCK-ps/00new/ps
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ps)
+ERROR: dependency ‘fs’ is not available for package ‘sass’
+Perhaps try a variation of:
+install.packages('fs')
+* removing ‘/usr/local/lib/R/site-library/sass’
+* installing *source* package ‘diffobj’ ...
+** this is package ‘diffobj’ version ‘0.3.8’
+** package ‘diffobj’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0’
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c diff.c -o diff.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c diffobj.c -o diffobj.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -std=gnu2x -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o diffobj.so diff.o diffobj.o init.o -L/usr/local/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/00LOCK-diffobj/00new/diffobj/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (diffobj)
+* installing *source* package ‘processx’ ...
+** this is package ‘processx’ version ‘3.9.0’
+** package ‘processx’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0’
+gcc -std=gnu2x -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -L/usr/local/lib -Wall tools/px.c -o tools/px
+gcc -std=gnu2x -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -L/usr/local/lib -I../inst/include -Wall tools/sock.c -o tools/sock
+gcc -std=gnu2x -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -L/usr/local/lib supervisor/supervisor.c \
+      supervisor/utils.c -o supervisor/supervisor
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c base64.c -o base64.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c client.c -o client.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c errors.c -o errors.o
+gcc -std=gnu2x -shared -L"/usr/local/lib/R/lib" -L/usr/local/lib -o client.so base64.o client.o errors.o  \
+	 -L"/usr/local/lib/R/lib" -lR
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c poll.c -o poll.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c processx-connection.c -o processx-connection.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c processx-vector.c -o processx-vector.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c create-time.c -o create-time.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c unix/childlist.c -o unix/childlist.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c unix/connection.c -o unix/connection.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c unix/processx.c -o unix/processx.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c unix/sigchld.c -o unix/sigchld.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c unix/utils.c -o unix/utils.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c unix/named_pipe.c -o unix/named_pipe.o
+gcc -std=gnu2x -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cleancall.c -o cleancall.o
+gcc -std=gnu2x -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o processx.so init.o poll.o errors.o processx-connection.o processx-vector.o create-time.o base64.o unix/childlist.o unix/connection.o unix/processx.o unix/sigchld.o unix/utils.o unix/named_pipe.o cleancall.o -L/usr/local/lib/R/lib -lR
+installing via 'install.libs.R' to /usr/local/lib/R/site-library/00LOCK-processx/00new/processx
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (processx)
+ERROR: dependency ‘sass’ is not available for package ‘bslib’
+Perhaps try a variation of:
+install.packages('sass')
+* removing ‘/usr/local/lib/R/site-library/bslib’
+* installing *source* package ‘callr’ ...
+** this is package ‘callr’ version ‘3.8.0’
+** package ‘callr’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (callr)
+* installing *source* package ‘waldo’ ...
+** this is package ‘waldo’ version ‘0.6.2’
+** package ‘waldo’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (waldo)
+* installing *source* package ‘pkgbuild’ ...
+** this is package ‘pkgbuild’ version ‘1.4.8’
+** package ‘pkgbuild’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pkgbuild)
+ERROR: dependency ‘bslib’ is not available for package ‘rmarkdown’
+Perhaps try a variation of:
+install.packages('bslib')
+* removing ‘/usr/local/lib/R/site-library/rmarkdown’
+ERROR: dependency ‘rmarkdown’ is not available for package ‘htmlwidgets’
+Perhaps try a variation of:
+install.packages('rmarkdown')
+* removing ‘/usr/local/lib/R/site-library/htmlwidgets’
+ERROR: dependency ‘fs’ is not available for package ‘pkgload’
+Perhaps try a variation of:
+install.packages('fs')
+* removing ‘/usr/local/lib/R/site-library/pkgload’
+ERROR: dependency ‘htmlwidgets’ is not available for package ‘htmlTable’
+Perhaps try a variation of:
+install.packages('htmlwidgets')
+* removing ‘/usr/local/lib/R/site-library/htmlTable’
+ERROR: dependency ‘pkgload’ is not available for package ‘testthat’
+Perhaps try a variation of:
+install.packages('pkgload')
+* removing ‘/usr/local/lib/R/site-library/testthat’
+ERROR: dependencies ‘htmlTable’, ‘rmarkdown’ are not available for package ‘Hmisc’
+Perhaps try a variation of:
+install.packages(c('htmlTable', 'rmarkdown'))
+* removing ‘/usr/local/lib/R/site-library/Hmisc’
+ERROR: dependencies ‘Hmisc’, ‘png’ are not available for package ‘qgraph’
+Perhaps try a variation of:
+install.packages(c('Hmisc', 'png'))
+* removing ‘/usr/local/lib/R/site-library/qgraph’
+ERROR: dependencies ‘Hmisc’, ‘qgraph’ are not available for package ‘mgm’
+Perhaps try a variation of:
+install.packages(c('Hmisc', 'qgraph'))
+* removing ‘/usr/local/lib/R/site-library/mgm’
+
+The downloaded source packages are in
+	‘/tmp/RtmpHjes9U/downloaded_packages’
+There were 12 warnings (use warnings() to see them)
