@@ -1,0 +1,15 @@
+Figure 1. Positioning of the present study relative to artifact evaluation, environment preservation, scientific-software testing, and execution-oriented reproducibility research. The figure is a conceptual literature map rather than a quantitative result.
+
+Figure 2. Layered reproducibility model used in the study. A, I, B, E, N, and P denote availability, installability, buildability, executability, scientific-result fidelity, and performance fidelity. Hardware/infrastructure satisfiability is an external eligibility condition; repair depth and failure mechanism are recorded separately.
+
+Figure 3. Long-term reproducibility status across the ten evaluated artifacts. Rows are cases PS001--PS010 and columns are the six capabilities A/I/B/E/N/P. N/A denotes an inapplicable or externally ineligible capability; UNKNOWN denotes insufficient retained evidence and is not counted as failure.
+
+Figure 4. Classification sensitivity for installability, buildability, executability, scientific-result fidelity, and performance fidelity. Points show strict PASS and inclusive PASS-or-PARTIAL rates; horizontal ranges show worst/best reassignment of applicable UNKNOWN cases and are not confidence intervals.
+
+Figure 5. Execution outcome before and after bounded intervention. The figure separates out-of-the-box execution from eventual recovery and therefore does not treat an initial failure as irrecoverability.
+
+Figure 6. Non-exclusive technical mechanisms identified in the retained evidence. A case can contribute to more than one mechanism; mechanism frequency is therefore not an artifact-level failure rate.
+
+Figure 7. PS003 runtime sensitivity across JDK configurations. Points are baseline-adjusted mean ijOps/sjOps ratios and intervals are descriptive 95\% t intervals across three retained independent repetitions per JDK; no population-level JDK effect is inferred.
+
+Figure 8. PS008 Base\_Seq runtimes for historical and current reconstructed configurations. The comparison is descriptive because code and environment differences are confounded; it must not be interpreted as a causal software-version effect.

@@ -1,0 +1,5 @@
+• Ten scientific software artifacts were reconstructed across six ecosystems.
+• Availability did not imply execution or scientific-result fidelity.
+• Bounded repairs recovered several artifacts without scientific-code changes.
+• Scientific-result and performance fidelity degraded independently.
+• Claim-level provenance exposes uncertainty hidden by binary labels.

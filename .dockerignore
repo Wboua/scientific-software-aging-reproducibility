@@ -1,0 +1,13 @@
+.git
+.gitignore
+.venv
+__pycache__
+*.py[cod]
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+.DS_Store
+Thumbs.db

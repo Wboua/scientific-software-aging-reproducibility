@@ -37,3 +37,39 @@ Case-specific scripts expect the retained evidence paths in this repository.
 ```bash
 python analysis/scripts/build_claim_traceability_appendix.py
 ```
+
+## 6. Rebuild manuscript
+
+```bash
+cd manuscript
+pdflatex main.tex
+bibtex main
+pdflatex main.tex
+pdflatex main.tex
+```
+
+## 7. Reproduce the normalized analysis with Docker
+
+The repository root contains a Dockerfile for the analysis pipeline only. This keeps the analysis environment reproducible without pretending that the ten heterogeneous aged artifacts share a single containerizable execution environment.
+
+```bash
+docker build -t scientific-software-aging-analysis .
+docker run --rm scientific-software-aging-analysis
+```
+
+To write regenerated files back into the checked-out repository:
+
+```bash
+docker run --rm -v "$PWD:/workspace" scientific-software-aging-analysis
+```
+
+The default container command runs:
+
+```text
+validate_repository.py
+verify_evidence_hashes.py
+run_analysis.py
+robustness_analysis.py
+```
+
+The manuscript build remains separate because it requires a TeX distribution; the Docker image is intentionally limited to the auditable Python analysis path.
